@@ -194,7 +194,7 @@ header .navbar a{
 } */
 .hero {
     padding: 16px ;
-    padding-top: 62px;
+    padding-top: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -260,6 +260,52 @@ header .navbar a{
 .counter .records .sub-record h4{
     font-size: 16px;
     margin: 0px 0px 16px;
+}
+.break{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 18px;
+    border-bottom-right-radius: 100% 150%;
+    border-bottom-left-radius: 100% 150%;
+}
+
+.solution{
+    padding: 16px!important;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+}
+.solution .solution-content{
+    flex:1 1
+}
+.solution .solution-content h2{ 
+    margin-bottom: 10px;
+}
+.solution .solution-content p{ 
+    font-size: 16px;
+}
+
+.solution  .solution-img{
+display: flex;
+flex: 1 1;
+justify-content: flex-end;
+}
+.solution  .solution-img img{
+    display: block;
+    width: 500px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 100%;
+}
+.special-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: #fffef2;
 }
 /* media queries */
 @media(max-width:991px){
