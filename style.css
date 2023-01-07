@@ -1,0 +1,267 @@
+:root{
+    --color-primary: #ee3425;
+    --color-primary-1: #ee3425;
+    --color-primary-2: #ee3425;
+    --color-secondary: #fbdc00;
+    --color-secondary-1: #ebbe00;
+    --font-color: #434343;
+    --font-color-heading: #000;
+    --font-color-link: var(--color-primary);
+    --font-family: "PT Sans",sans-serif;
+    --font-family-heading: "Ubuntu",sans-serif;
+    --font-size-xl: 18px;
+    --font-size-lg: 16px;
+    --font-size-md: 14px;
+    --font-size-sm: 12px;
+    --font-size-xs: 10px;
+    --line-height: 1.5;
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body{
+    font-family: var(--font-family)!important;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height);
+    color: var(--font-color);
+    -webkit-font-smoothing: antialiased;
+}
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6, p {
+font-family: var(--font-family-heading);
+color: var(--font-color-heading);
+}
+h1{
+    display: block;
+    font-size: 2em;
+    /* margin-block-start: 0.67em; */
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+    font-size: 40px;
+    line-height: 1.2;
+
+}
+h2 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+h4{
+   
+        display: block;
+        margin-block-start: 1.33em;
+        margin-block-end: 1.33em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 8px 106px;
+    background: var(--color-secondary);
+}
+header.logo{
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    flex-shrink: 0;
+
+}
+header .navbar{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    
+}
+header .navbar a{
+    font-family: var(--font-family-heading);
+    font-weight: 550!important;
+    color: var(--font-color-heading);
+    padding:0px 23px;
+}
+.auth{
+    display: flex;
+}
+.auth .login{
+    list-style-type: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.auth .login span{
+    color: var(--font-color);
+    font-weight:550!important;
+}
+.auth .signup_button{
+    color: #fff;
+    background-color: var(--color-primary)!important;
+    border: 1px solid var(--color-primary);
+    min-width: 72px;
+    height: 36px;
+    padding: 4px 16px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* .home{
+    position: absolute;
+    width: 100%;
+
+    background: url(https://cdn.cogoport.io/cms-prod/vault/original/home-banner-background-1.webp);
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    display: flex;
+    margin: -8px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.home_content_container{
+    width: 1180px;
+    padding: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+} */
+
+/* .home{
+    position: absolute;
+    width: 100%;
+
+    background: url(https://cdn.cogoport.io/cms-prod/vault/original/home-banner-background-1.webp);
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    display: flex;
+    margin: -8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .content{
+    height: 400px;
+    width: 48%;
+    float: left;
+}
+.home .content_img{
+    height: 400px;
+    width: 48%;
+    float: right;
+} */
+.hero {
+    padding: 16px ;
+    padding-top: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(https://cdn.cogoport.io/cms-prod/vault/original/home-banner-background-1.webp);
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+}
+.hero .hero-content  {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 87px;
+}
+.hero .hero-content .content p{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.hero .hero-content .content .btn{
+    color: #fff;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    min-width: 72px;
+    padding: 8px 42px!important;
+    border-radius: 8px!important;
+    height: 36px;
+    font-family: var(--font-family);
+    font-size: 14px!important;
+    font-weight: 700!important;
+}
+.hero .hero-img {
+    flex: 1.25;
+    margin-bottom: -66px ;
+    margin-left: 2em;
+}
+
+.counter{
+    margin: 0px 83px !important;
+    padding: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.counter .records{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: -40px;
+}
+.counter .records .sub-record{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter .records .sub-record h2{
+    color: var(--color-primary);
+    margin: 0px;
+}
+.counter .records .sub-record h4{
+    font-size: 16px;
+    margin: 0px 0px 16px;
+}
+/* media queries */
+@media(max-width:991px){
+
+}
