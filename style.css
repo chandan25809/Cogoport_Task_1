@@ -524,7 +524,7 @@ justify-content: flex-end;
     display: flex;
 }
 .work .work-main-container .work-style-container .work-card-1{
-    margin-bottom: 120px;
+ 
     width: 300px;
     padding: 16px;
     border-radius: 10px;
@@ -595,6 +595,31 @@ font-weight: 600;
     right: 300px;
     bottom: 225px;
 }
+
+
+
+/* Industry section */
+.industry{
+    padding: 16px!important;
+    margin-bottom: 50px;
+    background: #fffef3;
+}
+.industry .industry-container{
+    padding: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+}
+.industry .industry-container .industry-title{
+    text-align: center;
+}
+.industry .industry-style-container{
+display: flex;
+flex-flow: row wrap;
+align-content: space-between;
+justify-content: space-between;
+}
+
 /* media queries */
 @media(max-width:991px){
 
