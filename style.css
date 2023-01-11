@@ -247,7 +247,7 @@ header .navbar a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 65px;
+    margin-left: 80px;
     margin-bottom: 10px;
 }
 .hero .hero-content .content h1{
