@@ -89,12 +89,89 @@ h3{
 }
 p{
     display: block;
+    
     /* margin-block-start: 1em; */
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    
 }
-header{
+
+/* navbar */
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 8px 16px;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500!important;
+    color: #000;
+    background: #fbdc00;
+}
+.nav-bar-logo{
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+.nav-bar-list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500;
+}
+.nav-bar-list1{
+    margin-left: 80px!important;
+}
+.nav-bar-register{
+    margin-right: auto;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500;
+}
+.nav-bar-list-items{
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500!important;
+}
+.nav-bar-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500;
+}
+.login{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500;
+    padding-left: 40px;
+}
+.signup-button{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #ee3425;
+    border: 1px solid #ee3425;
+    min-width: 72px;
+    height: 36px;
+    padding: 4px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "PT Sans",sans-serif;
+    border-radius: 7px;
+}
+/* header{
     position: absolute;
     top: 0;
     left: 0;
@@ -150,63 +227,16 @@ header .navbar a{
     padding: 4px 16px;
     width: 100%;
     border-radius: 8px;
-}
-
-/* .home{
-    position: absolute;
-    width: 100%;
-
-    background: url(https://cdn.cogoport.io/cms-prod/vault/original/home-banner-background-1.webp);
-    background-color: var(--color-secondary);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100%;
-    display: flex;
-    margin: -8px;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.home_content_container{
-    width: 1180px;
-    padding: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
 } */
 
-/* .home{
-    position: absolute;
-    width: 100%;
 
-    background: url(https://cdn.cogoport.io/cms-prod/vault/original/home-banner-background-1.webp);
-    background-color: var(--color-secondary);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100%;
-    display: flex;
-    margin: -8px;
-    justify-content: space-between;
-    align-items: center;
-}
-.home .content{
-    height: 400px;
-    width: 48%;
-    float: left;
-}
-.home .content_img{
-    height: 400px;
-    width: 48%;
-    float: right;
-} */
 .hero {
     padding: 16px ;
-    padding-top: 110px;
+    padding-top: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url(https://cdn.cogoport.io/cms-prod/vault/original/home-banner-background-1.webp);
+    background: url(https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/home-banner-background-1.webp);
     background-color: var(--color-secondary);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -217,13 +247,26 @@ header .navbar a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 87px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+.hero .hero-content .content h1{
+
+    margin-bottom: 20px!important;
+
 }
 .hero .hero-content .content p{
     font-size: 16px;
-    margin-bottom: 25px;
+    margin:0 0 20px!important;
+    color: #434343!important;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "PT Sans",sans-serif;;
 }
-.hero .hero-content .content .btn{
+.hero .hero-content  .btn{
     color: #fff;
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
@@ -267,7 +310,7 @@ header .navbar a{
 }
 .counter .records .sub-record h4{
     font-size: 16px;
-    margin: 0px 0px 16px;
+    margin: 5px 0px 16px;
 }
 .break{
     width: 100%;
